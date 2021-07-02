@@ -1,0 +1,25 @@
+@import 'src/shared.scss';
+
+.movie-page {
+  padding: $gutter;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &__poster-wrapper {
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__poster {
+    max-width: 200px;
+    max-height: 300px;
+  }
+
+  &__info {
+    padding: $gutter;
+  }
+}

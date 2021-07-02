@@ -1,0 +1,29 @@
+@import "src/shared.scss";
+
+.movie-link {
+  text-decoration: none;
+  color: $main;
+}
+.movie-card {
+  padding: $gutter;
+  display: flex;
+  background-color: #f1f1f1;
+  border: 1px solid #cccccc;
+  margin-bottom: $gutter;
+  max-width: 700px;
+  min-height: 100px;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__poster {
+    width: 100px;
+    margin-right: 20px;
+  }
+}

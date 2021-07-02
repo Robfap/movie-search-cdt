@@ -1,0 +1,11 @@
+@import 'src/shared.scss';
+
+.search-page {
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  .search-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

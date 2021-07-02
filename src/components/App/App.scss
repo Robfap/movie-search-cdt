@@ -1,0 +1,42 @@
+@import-normalize;
+
+@import "src/shared.scss";
+
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: $main;
+}
+
+html, body, .root, .app {
+  height: 100%;
+}
+
+.app {
+  background-color: #f8f8f8;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+    overflow: auto;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}

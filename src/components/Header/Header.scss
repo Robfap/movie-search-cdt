@@ -1,0 +1,22 @@
+@import 'src/shared.scss';
+
+.header {
+  background-color: $secondary;
+  border-bottom: 1px solid #e2e2e2;
+  padding: $gutter;
+
+  &__text {
+    font-size: 1em;
+    margin: 0;
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $main;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

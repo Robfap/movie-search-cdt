@@ -1,0 +1,8 @@
+@import "src/shared.scss";
+
+.error-message {
+  background-color: $warning;
+  font-size: 20px;
+  padding: $gutter;
+  color: white;
+}
